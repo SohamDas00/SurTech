@@ -1,25 +1,15 @@
-main
 import React from "react";
 import Navbar from "./components/Navbar";
-
+import About from "./components/About";
+import Title from "./components/Title";
 const App = () => {
   return (
     <>
       <Navbar />
+      <Title />
+      <About />
     </>
   );
 };
-
-import React from 'react'
-import About from './components/About';
-
-const App = () => {
-  return (
-    <div>
-      <About/>
-    </div>
-  )
-}
-main
 
 export default App;
