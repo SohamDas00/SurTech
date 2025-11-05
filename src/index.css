@@ -139,6 +139,7 @@ body {
   max-width: 900px;
   margin: 0 auto;
   margin-bottom: -100px;
+  margin-top: -30px;
 }
 
 .title-heading {
@@ -310,11 +311,10 @@ body {
 .committee-section h1::after {
   content: "";
   display: block;
-  width: 100px;
-  height: 5px;
+  width: 80px;
+  height: 4px;
   background: #007bff;
   margin: 10px auto 0;
-  border-radius: 5px;
 }
 
 /* Role Headings */
@@ -418,8 +418,18 @@ body {
 /* Scoped styles for Paper Submission Section */
 
 .paper-submission-section {
-  background-color: #f9fafb; /* light gray background */
-  padding: 3rem 1rem; /* vertical 3rem, horizontal 1rem */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #f8f9fa; /* light grey background for contrast */
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paper-submission-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .paper-submission-section .container {
@@ -428,13 +438,22 @@ body {
   padding: 0 1rem; /* optional horizontal padding */
 }
 
+.paper-submission-section .section-title h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #007bff;
+  margin: 10px auto 0;
+}
+
 .paper-submission-section .section-title {
   text-align: center;
   font-size: 2.5rem; /* 36px approx */
   font-weight: 700;
   color: #003366; /* dark blue */
   margin-bottom: 2rem;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 /* Card styling remains the same */
 .paper-submission-section .card {
@@ -473,4 +492,193 @@ body {
 
 .paper-submission-section .card-link:hover {
   color: #1e40af;
+}
+
+/* Contact Section Styles */
+
+.contact-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #f8f9fa; /* light grey background for contrast */
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 50px;
+}
+
+.contact-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contact-main-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 2rem;
+  margin-top: 50px;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.contact-item {
+  margin-bottom: 1.5rem;
+}
+
+.contact-heading {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #1d4ed8; /* blue-700 */
+  margin-bottom: 0.25rem;
+}
+
+.contact-detail {
+  color: #4b5563; /* gray-600 */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-detail:hover {
+  color: #1e40af; /* darker blue */
+  transition: color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .contact-main-heading {
+    font-size: 2.5rem;
+  }
+}
+
+/* Conference Tracks Section Styles */
+
+.conference-tracks-section {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 40px 20px;
+  background: #f8f9fa; /* light grey background for contrast */
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.conference-tracks-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.conference-tracks-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.conference-tracks-section .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 2rem;
+  margin-top: 50px;
+}
+
+.tracks-list {
+  list-style-type: decimal;
+  list-style-position: inside;
+  background-color: #f9fafb;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #374151; /* gray-700 */
+}
+
+.tracks-list li {
+  margin-bottom: 0.75rem;
+  padding-left: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.tracks-list li:hover {
+  color: #1d4ed8; /* blue-700 */
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .conference-tracks-section .section-title {
+    font-size: 2.5rem;
+  }
+
+  .tracks-list {
+    font-size: 1.25rem;
+  }
+}
+
+/* Footer Section */
+
+.footer-section {
+  background-color: #003366; /* dark blue to match your theme */
+  color: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer-text {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.footer-text a {
+  text-decoration: none;
+  color: #ffd700;
+}
+
+.footer-text strong {
+  color: #ffd700; /* gold accent for names */
+}
+
+/* ===== CSS (HorizontalScroll.css) ===== */
+.scroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background: #eff6ff;
+  padding: 1rem 0;
+}
+
+.scroll-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left linear infinite;
+}
+
+.scroll-content span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #003366;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-content {
+    animation: none;
+  }
 }

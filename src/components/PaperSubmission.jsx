@@ -6,7 +6,7 @@ const PaperSubmission = () => {
       {" "}
       <div className="container">
         {" "}
-        <h2 className="section-title">Paper Submission</h2>{" "}
+        <h2 className="section-title">Paper Submission</h2> <hr />
         <div className="cards-grid top-card">
           {" "}
           <div className="card">
